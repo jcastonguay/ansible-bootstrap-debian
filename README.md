@@ -2,16 +2,18 @@ Bootstrap Debian
 ================
 Installs the minimum requirements for using Ansible on Debian/Ubuntu hosts.
 
-The role installs the `python`, `python-apt` and `python-pycurl` packages
-if they were not already available. After the first run, this role will do
-nothing. A typical use case would be scripted setup of new hosts.
+The role installs the `python`, `python-apt`, `python-pycurl` and `aptitude`
+packages (if not already available). After the initial run, this role should
+do nothing. I.e, it will not force updates to the aforementioned packages.
 
-See the [GitHub repository](http://github.com/cederberg/ansible-bootstrap-debian)
+The typical use case for this role is scripted creation of new hosts or
+automatic preparation of existing hosts for Ansible management. See the
+[GitHub repository](http://github.com/cederberg/ansible-bootstrap-debian)
 for detailed script and source code.
 
 Requirements
 ------------
-None. That's the whole point.
+The host machine should run Debian or Ubuntu.
 
 Role Variables
 --------------
