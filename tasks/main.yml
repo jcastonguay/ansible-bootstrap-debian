@@ -10,3 +10,4 @@
      - python
      - python-apt
      - python-pycurl
+     - aptitude
